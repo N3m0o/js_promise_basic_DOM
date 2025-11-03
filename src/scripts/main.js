@@ -15,7 +15,7 @@ const promise2 = new Promise((resolve, reject) => {
 });
 
 function handleSuccess(message) {
-  const div = document.createElement('div');
+  const div = document.createElement('.logo');
 
   div.className = 'message';
   div.textContent = message;
