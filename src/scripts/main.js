@@ -1,6 +1,6 @@
 'use strict';
 
-const logo = document.querySelector('h1');
+const logo = document.querySelector('.logo');
 
 const promise1 = new Promise((resolve, reject) => {
   logo.addEventListener('click', () => {
@@ -15,7 +15,7 @@ const promise2 = new Promise((resolve, reject) => {
 });
 
 function handleSuccess(message) {
-  const div = document.createElement('.logo');
+  const div = document.createElement('div');
 
   div.className = 'message';
   div.textContent = message;
